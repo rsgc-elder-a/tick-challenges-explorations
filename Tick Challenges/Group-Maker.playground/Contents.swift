@@ -89,6 +89,58 @@ for (index, value) in studentRandomPosisiton.enumerate(){
   print("the index is\(index) and the values is \(value)")
 }
 
-//find the highest numbe rin the list of random numbers 
-//extension: create a second array that has the list of numbers not using built in funcitons 
+var holdingInt = 0
+
+for(stuff) in studentRandomPosisiton {
+    
+    if(holdingInt < stuff){
+        holdingInt = stuff
+    }
+    
+}
+
+print("the highest random value is:", holdingInt)
+
+//find the highest number in the list of random numbers
+//extension: create a second array that has the list of numbers not using built in funcitons
+
+
+var sortedArray = [Int]()
+
+var smallInt = 1000
+var gettLarge = 0
+
+for (thing) in studentRandomPosisiton{
+    smallInt = 1000
+    
+    var index = 0
+    
+for (index1, stuff) in studentRandomPosisiton.enumerate() {
+    
+    if(smallInt > stuff ){
+        
+        smallInt = stuff
+        index = index1
+        }
+    
+    }
+    studentRandomPosisiton[index] = 1001
+    sortedArray.append(smallInt)
+}
+
+sortedArray
+
+//loops through the array and find the smallest value then puts in array over and over again 
+
+
+
+
+
+
+
+
+
+
+
+
 
