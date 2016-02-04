@@ -108,6 +108,8 @@ print("the highest random value is:", holdingInt)
 
 
 var sortedArray = [Int]()
+var oldIndex = [Int]()
+var newStudentList = [String]()
 
 var smallInt = 1000
 var gettLarge = 0
@@ -126,11 +128,18 @@ for (index1, stuff) in studentRandomPosisiton.enumerate() {
         }
     
     }
+    oldIndex.append(index)
     studentRandomPosisiton[index] = 1001
     sortedArray.append(smallInt)
+//    newStudentList.append(studentList[oldIndex])
 }
 
 sortedArray
+oldIndex
+
+
+//GET THIS CODE OFF GITHUB
+
 
 //loops through the array and find the smallest value then puts in array over and over again 
 //then replaces the old array with large numbers
